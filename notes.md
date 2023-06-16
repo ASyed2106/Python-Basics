@@ -136,7 +136,46 @@ while flag:
 numeric < uppercase<lowercase
 
 #### Indexing
-							  
-							  
-							  
+	- Examine: word = “Hello”
+	- print(word[2]) # outputs → ‘l’
+	- print(word[0]) # outputs → ‘H’
+	- print(word[-1]) # outputs → ‘o’
+	- print(word[5]) # index error
 
+#### Slicing 🐸
+	- In Python, we can create a new subset of a sequence if the data-type is slicable.
+		-  we can create new version that is a subset of an original string.
+	- word = “Hello”
+		print(word[1:3]) → ‘el’
+		print(word[-1:-3:-1]) → ‘ol’ 
+		print(word[0:5:2]) → ‘Hlo’
+		print(word[2:2]) → ‘’ # empty string
+		print(word[6:2]) → ‘’ # empty string
+		**print(word[:]) → ‘Hello’
+		print(word[::-1]) → ‘olleH’
+		print(word[::-2]) → ‘olH’**
+#### Immutability 
+	- Despite the fact that we can index and slice strings, **Strings are immutable**.
+		- immutability -->  Where the data type value can’t be altered without recreation.
+Example:
+name = “Jim”
+name[0] = “T” #Will produce an error 
+Integer, Floats, Boolean, and Strings are all Immutable
+
+#### String operations
+a="Hi" b='bye'
+concatenation --> a+b--> 'Hibye'
+repetition --> a*2 --> 'HiHi'
+
+### Lists
+	- collection of data item values
+	- Each item can be same or different data type (Int, Float, String, Boolean, List)
+	- Each items are separated by a comma except the last
+	- A list is denoted by square brackets
+	- A list is iterable; therefore, we can traverse through it with a for loop
+	- ** lists are indexable and sliceable **
+	- **lists are MUTABLE **
+#### List methods 
+	- .append(item) 
+		- will add the argument: item to the end of the list. Append only adds one item at a time
+	- .extend(another_list) allows us to combine two lists together into one list … the argument of .extend() has to be a list
