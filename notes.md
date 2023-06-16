@@ -47,7 +47,8 @@
 #### if else statements
     - when the if’s boolean expression is False, the else’s code block will be executed
           - This is very powerful for binary decisions.
-    - also very clean coding practice to make sure that the program knows how to handle situations when the boolean_expression evaluates to False.
+    - also very clean coding practice to make sure that the program knows how to handle
+      situations when the boolean_expression evaluates to False.
 #### if elif else
     - Sometimes there can be multiple conditionals rather than a binary condition
         -  Your Boolean expressions should all be related to each other. 
@@ -118,3 +119,24 @@ while flag:
     - **Algorithms**: helps to create or formulate algorithms
     - **Clean Code**: organizes a solution into a function
     - **Single Serving**: a block of code that solves a single problem
+ 
+### Strings
+	- a data type that is a sequence of characters
+	- rep ALL character/symbol based data type in Python 3
+	- use single/ double quotations to denote strings
+	- Variables can hold string type values 
+	- can have empty strings 
+	- can create string with a space 
+	- Strings are comparable; therefore can create boolean expressions that compare strings
+	
+#### Comparing strings
+	- When a string is sorted/compared, it follows the ASCII order.
+	- Numeric Symbols are **less** than uppercase characters
+	- Uppercase characters are When a string is sorted/compared, it follows the ASCII order.
+numeric < uppercase<lowercase
+
+#### Indexing
+							  
+							  
+							  
+
