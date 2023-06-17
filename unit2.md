@@ -49,3 +49,72 @@ Object’s Code → called: methods
     - It helps us to do any initialization for the object’s attributes
     - self parameter is used to denote that the method is applied and accessible for the object itself
     - self will also treat its own attributes as local
+    
+### Encapsulation
+    - Information Hiding: Restricting the access to the classes/objects’ certain attributes and methods.
+        - Why?
+            - Data Protection
+            - Restricting certain methods to be callable
+    - In Python, this isn’t really possible: hence we use a special system. → We hide attributes and methods by using a double underscore __ as a prefix. 
+    
+##### Setter / Getter methods
+    - we need a setter and a getter if values encapsulated 
+    - setter methods helps us update encapsulated values
+    - we write public methods in order to access encapsulated values
+    - this allows us to access it from outside but also restricts how we can access/control
+    - Implementing the getter and setter pattern requires: 
+            - Making your attributes non-public ( ENCAPSULATING IT)
+            - Writing getter and setter methods for each encapsulated attribute
+                    - Getter: A method that allows you to access an attribute in a given class
+                    - Setter: A method that allows you to set or mutate the value of an attribute in a class
+
+### Overloading 
+    - Two methods in one class that have the same method name, but different parameters
+            - There are NO OVERLOADING IN Python 3.
+    
+### Overriding
+    - Two methods with the same method name and parameters.
+            - One method is in the parent class (lesson 3)
+            - One method is in the child class (lesson 3)
+            - Overriding allows the child class to provide specific implementation for a method that exists in the parent class
+            - You can also override built-in magic-methods. OR Base-functions
+
+### Polymorphism 
+    - Polymorphism: A method that can be used across different classes and object that is dependent on the parameters.
+        Poly → Many
+        Morphism → Forms
+    - Ideas:
+         - Different Classes (non-inherited) can have the same named methods (Simple) → Polymorphism
+         - Within a set of inherited classes have the same methods
+
+### Base override
+- allows us to override python features,functions to help with the functionability of our object
+       - example:
+            - When we try to make our custom objects printable, we actually need to override __repr__ and __str__
+                    __repr__ → Allows us to present a printable version of our object
+                    __str__ → Allows us to convert our object to a string
+
+### Inheritance
+- When an object or class is based on another class; where its features are from a parent class
+        **Single Inheritance**: A subclass inheriting the features of a single superclass / parent class
+       **Multiple Inheritance**: A subclass inheriting the features of a multiple parent classes
+        **Multilevel Inheritance**: A subclass is inheriting from another subclass… A → B → C
+                Types:
+                    **Multi-Generational**: Grandparent → Parent → Child
+                    **Multi-Parent** (Not limited to two)
+                                Parent A \
+                                            > Child
+                                Parent B /
+                    **Mixture of 1 and 2**
+                    
+ #### What can we do with inheritance
+- A child will receive all attributes and methods of the parent
+- A child can then enhance itself with new attributes and new methods
+- A child **can OVERRIDE attributes** and methods for their **own liking/speciality**
+    
+- **If** a child class inherits the parent class:
+    - The child does not need a new __init__() method UNLESS it requires new attributes
+    - The child does not need to reinstate the parent’s methods UNLESS you override them
+
+ 
+
