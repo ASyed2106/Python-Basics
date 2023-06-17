@@ -176,14 +176,18 @@ repetition --> a*2 --> 'HiHi'
 	- ** lists are indexable and sliceable **
 	- **lists are MUTABLE **
 #### List methods 
-	- _**.append(item)**_ will add the argument: item to the end of the list. Append only adds one item at a time
-	- **.extend(another_list)**__ allows us to combine two lists together into one list … the argument of .extend() has to be a list
-	- .**_insert(location, item)_** allows us to add an item at a specific location in a list  🐸
+	- .append(item) will add the argument: item to the end of the list. Append only adds one item at a time
+	
+	- .extend(another_list) allows us to combine two lists together into one list … the argument of .extend() has to be a list
+	
+	- .insert(location, item) allows us to add an item at a specific location in a list  🐸
 		- If the location is beyond the size, it will add it to the end
 		- location can be negative
 		- If the location already has a value, it will shift everything at the location onwards to the right to add the item
-	- _**.pop(target_index)**_ will remove a value located at the target_index and RETURN THE VALUE
-	-  **.remove(target_value)**__ will remove the first occurance of the target value if it exists in the list.
+	
+	- .pop(target_index) will remove a value located at the target_index and RETURN THE VALUE
+	
+	-  .remove(target_value) will remove the first occurance of the target value if it exists in the list.
 		- If the target_value doesn’t exist, it will produce an error
 			- we CANNOT use .remove in a for loop to remove values 
 					  eg: 
