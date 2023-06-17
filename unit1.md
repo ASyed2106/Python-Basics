@@ -176,6 +176,30 @@ repetition --> a*2 --> 'HiHi'
 	- ** lists are indexable and sliceable **
 	- **lists are MUTABLE **
 #### List methods 
-	- .append(item) 
-		- will add the argument: item to the end of the list. Append only adds one item at a time
-	- .extend(another_list) allows us to combine two lists together into one list … the argument of .extend() has to be a list
+	- _**.append(item)**_ will add the argument: item to the end of the list. Append only adds one item at a time
+	- **.extend(another_list)**__ allows us to combine two lists together into one list … the argument of .extend() has to be a list
+	- .**_insert(location, item)_** allows us to add an item at a specific location in a list  🐸
+		- If the location is beyond the size, it will add it to the end
+		- location can be negative
+		- If the location already has a value, it will shift everything at the location onwards to the right to add the item
+	- _**.pop(target_index)**_ will remove a value located at the target_index and RETURN THE VALUE
+	-  **.remove(target_value)**__ will remove the first occurance of the target value if it exists in the list.
+		- If the target_value doesn’t exist, it will produce an error
+			- we CANNOT use .remove in a for loop to remove values 
+					  eg: 
+						array=[a,b,b,a]
+						for i in array:
+							if i == 'a':
+								array.remove(i)
+			- so here, in a for loop, eachg value is only checked over once, if we tell program to remove value at index of [2], after it is done
+			  every item position will shiftt up by one ( each index valye is shifted to the left)
+			- so, in the for loop logic it already checked the value at index of 2, it does NOT recogize that since the array items shifted up by 
+			  one in the list that there is NOW a new item at the index of 2 WHICH the program DID NOT CHECK
+			- regardless, it skips it and moves on to checking the index of 3 value 
+					- if we want to remove values from an array, USE WHILE LOOP
+						- set condition: while 'a' in array: ....
+							- therefore each value in the array wil be checked MORE than once WHICH ensures no value is skipped 
+							
+**List Additions works the same as the extend() function, but it creates a new list.**
+**(append, extend, insert MUTATES a list … list addition creates new list)**  🐸
+
