@@ -96,15 +96,18 @@ Object’s Code → called: methods
 
 ### Inheritance
 - When an object or class is based on another class; where its features are from a parent class
-        **Single Inheritance**: A subclass inheriting the features of a single superclass / parent class
-       **Multiple Inheritance**: A subclass inheriting the features of a multiple parent classes
-        **Multilevel Inheritance**: A subclass is inheriting from another subclass… A → B → C
+        -   **Single Inheritance**: A subclass inheriting the features of a single superclass / parent class
+        -   **Multiple Inheritance**: A subclass inheriting the features of a multiple parent classes
+        -   **Multilevel Inheritance**: A subclass is inheriting from another subclass… A → B → C
                 Types:
+                
                     **Multi-Generational**: Grandparent → Parent → Child
+                    
                     **Multi-Parent** (Not limited to two)
                                 Parent A \
                                             > Child
                                 Parent B /
+                                
                     **Mixture of 1 and 2**
                     
  #### What can we do with inheritance
